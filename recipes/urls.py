@@ -1,5 +1,5 @@
 from rest_framework import routers
-from .api import RecipeViewSet
+from .views import RecipeViewSet
 
 app_name = 'recipes'
 
