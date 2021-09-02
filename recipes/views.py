@@ -15,6 +15,7 @@ class RecipeViewSet(viewsets.ModelViewSet):
     queryset = Recipe.objects.all()
     serializer_class = RecipeSerializer
 
+
 @api_view(['POST'])
 def calculate_time(request):
     recipes = Recipe.objects.filter(id__in=request.data)
